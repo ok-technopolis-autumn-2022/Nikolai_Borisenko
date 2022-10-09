@@ -7,23 +7,23 @@
 <h1>todos</h1>
 <div>
   <div>
-    <input type="button">
-    <input type="text" value="What needs to be done?">
+    <input type="button" aria-label ="Отметить все задачи, как выполненное">
+    <input type="text" value="What needs to be done?" aria-label="Введите название новой задачи">
   </div>
   <ul>
-    <li><input type="checkbox">HTML<input type="button"></li>
-    <li><input type="checkbox">CSS<input type="button"></li>
-    <li><input type="checkbox">JS<input type="button"></li>
-    <li><input type="checkbox">JS tools<input type="button"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">HTML<input type="button" aria-label="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">CSS<input type="button" aria-label="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS<input type="button" aria-label="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS tools<input type="button" aria-label="Удалить задачу"></li>
   </ul>
-  <div>
-    <span>3 items left</span>
+  <div >
+    <span aria-label =" Выберите режим отображения " >3 items left</span>
       <span>
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
+        <input type="radio" name="status" value="Все" aria-label = "Показать все задачи">Все</input>
+        <input type="radio" name="status" value="Активные" aria-label = "Показывать только активные задачи">Активные</input>
+        <input type="radio" name="status" value="Выполнено" aria-label = "Показывать только выполненные задачи">Выполнено</input>
       </span>
-      <input type="button" value="Clear completed"/>
+      <input type="button" value="Очистить завершеные" aria-label ="Удалить все выполненные задачи"/>
   </div>
 </div>
 </body>
