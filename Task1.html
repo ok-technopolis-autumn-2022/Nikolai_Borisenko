@@ -7,23 +7,23 @@
 <h1>todos</h1>
 <div>
   <div>
-    <input type="button" aria-label ="Отметить все задачи, как выполненное">
+    <input type="button"  title="Отметить все задачи, как выполненное">
     <input type="text" value="What needs to be done?" aria-label="Введите название новой задачи">
   </div>
   <ul>
-    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">HTML<input type="button" aria-label="Удалить задачу"></li>
-    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">CSS<input type="button" aria-label="Удалить задачу"></li>
-    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS<input type="button" aria-label="Удалить задачу"></li>
-    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS tools<input type="button" aria-label="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">HTML<input type="button" title="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">CSS<input type="button" title="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS<input type="button" title="Удалить задачу"></li>
+    <li><input type="checkbox" aria-label ="Отметить задачу как выполненную">JS tools<input type="button" title="Удалить задачу"></li>
   </ul>
   <div >
     <span aria-label =" Выберите режим отображения " >3 items left</span>
-      <span>
+      <span role="radiogroup" aria-label="Режимы отображения" >
         <input type="radio" name="status" value="Все" aria-label = "Показать все задачи">Все</input>
         <input type="radio" name="status" value="Активные" aria-label = "Показывать только активные задачи">Активные</input>
         <input type="radio" name="status" value="Выполнено" aria-label = "Показывать только выполненные задачи">Выполнено</input>
       </span>
-      <input type="button" value="Очистить завершеные" aria-label ="Удалить все выполненные задачи"/>
+      <input type="button" value="Очистить завершеные" title ="Удалить все выполненные задачи"/>
   </div>
 </div>
 </body>
